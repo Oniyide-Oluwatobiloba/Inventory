@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Inventory Management</title>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #dbeafe;
+            --text-primary: #111827;
+            --bg-primary: #ffffff;
+            --border-color: #e5e7eb;
+        }
+    }
+    @layer components {
+        .btn { @apply px-4 py-2 rounded-lg font-medium transition-all; }
+        .btn-primary { @apply bg-[var(--primary-color)] text-white hover:opacity-90; }
+        .card { @apply bg-[var(--bg-primary)] rounded-xl shadow-sm border border-[var(--border-color)] p-6; }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="categories-app.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Management System - Dashboard</title>
+    <meta name="description" content="Comprehensive inventory management system for tracking products, stock levels, and inventory movements">
+    <meta name="keywords" content="inventory, stock management, warehouse, products, tracking">
+    <meta property="og:title" content="Inventory Management System">
+    <meta property="og:description" content="Professional inventory tracking and management solution">
+    <meta name="twitter:title" content="Inventory Management System">
+    <meta name="twitter:description" content="Professional inventory tracking and management solution">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #dbeafe;
+            --accent-color: #10b981;
+            --danger-color: #ef4444;
+            --warning-color: #f59e0b;
+            --text-primary: #111827;
+            --text-secondary: #6b7280;
+            --bg-primary: #ffffff;
+            --bg-secondary: #f9fafb;
+            --border-color: #e5e7eb;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+        }
+    }
+
+    @layer components {
+        .btn {
+            @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
+        }
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white hover:opacity-90;
+        }
+        .btn-secondary {
+            @apply bg-[var(--secondary-color)] text-[var(--primary-color)] hover:bg-opacity-80;
+        }
+        .card {
+            @apply bg-[var(--bg-primary)] rounded-xl shadow-sm border border-[var(--border-color)] p-6;
+        }
+        .stat-card {
+            @apply card hover:shadow-md transition-shadow duration-200 cursor-pointer;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Sidebar.js"></script>
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/StatCard.js"></script>
+    <script type="text/babel" src="components/RecentActivity.js"></script>
+    <script type="text/babel" src="components/LowStockAlert.js"></script>
+    <script type="text/babel" src="utils/inventory.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>

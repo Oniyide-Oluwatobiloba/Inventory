@@ -1,0 +1,84 @@
+[
+  {
+    "name": "product",
+    "fields": [
+      {
+        "name": "sku",
+        "type": "text",
+        "description": "Product SKU code",
+        "options": null
+      },
+      {
+        "name": "name",
+        "type": "text",
+        "description": "Product name",
+        "options": null
+      },
+      {
+        "name": "category",
+        "type": "text",
+        "description": "Product category",
+        "options": null
+      },
+      {
+        "name": "supplier",
+        "type": "text",
+        "description": "Supplier name",
+        "options": null
+      },
+      {
+        "name": "quantity",
+        "type": "number",
+        "description": "Current stock quantity",
+        "options": null
+      },
+      {
+        "name": "price",
+        "type": "number",
+        "description": "Product price",
+        "options": null
+      },
+      {
+        "name": "minStock",
+        "type": "number",
+        "description": "Minimum stock level threshold",
+        "options": null
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "description": "Product description",
+        "options": null
+      }
+    ]
+  },
+  {
+    "name": "activity",
+    "fields": [
+      {
+        "name": "type",
+        "type": "text",
+        "description": "Activity type: add, remove, update",
+        "options": null
+      },
+      {
+        "name": "description",
+        "type": "text",
+        "description": "Activity description",
+        "options": null
+      },
+      {
+        "name": "time",
+        "type": "text",
+        "description": "Formatted time string",
+        "options": null
+      },
+      {
+        "name": "timestamp",
+        "type": "datetime",
+        "description": "Activity timestamp",
+        "options": null
+      }
+    ]
+  }
+]
